@@ -1,0 +1,64 @@
+:root{
+    --bgColor: rgb(70, 70, 70);
+    --typewriterSpeed: 3s;
+    --typewriterCharacters: 13;
+}
+
+body{
+    margin: 0;
+    font-family: 'Source Code Pro', sans-serif;       
+    background: var(--bgColor);
+    min-height: 100vh;
+    display: grid;
+    place-content: center;
+    text-align: center;
+}
+
+.typewriterAnimation, .nameAnimation{
+    display: grid;
+    place-content: center;
+    text-align: center;
+}
+
+.subtitle{ /* use this for the typewriter effect */
+    color: #fff;
+    font-size: clamp(1rem, 3vw + 1rem, 4rem);
+    position: relative;
+    font-family: 'Source Code Pro', monospace;
+    width: max-content;
+}
+
+.subtitle::before,
+.subtitle::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.subtitle::before{
+    background: var(--bgColor);
+    animation: typewriter var(--typewriterSpeed) steps(var(--typewriterCharacters)) 1s forwards;
+}
+
+.subtitle::after{
+    width: 0.125em;
+    background: black;
+    animation:
+        typewriter var(--typewriterSpeed) steps(var(--typewriterCharacters)) 1s forwards,
+        blink 750ms steps(2, start) infinite;
+}
+
+@keyframes typewriter{
+    to{
+        left: 100%;
+    }
+}
+
+@keyframes blink{
+    to {
+        visibility: hidden;
+    }
+}

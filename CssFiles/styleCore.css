@@ -1,10 +1,11 @@
 :root{
+    /* headSection properties */
     --bgColor: rgb(70, 70, 70);
     --typewriterSpeed: 3s;
     --typewriterCharacters: 13;
 }
 
-.topSection{
+.headSection{
     margin: 0;
     font-family: 'Source Code Pro', sans-serif;       
     background: var(--bgColor);

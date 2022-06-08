@@ -5,11 +5,15 @@
     --typewriterSpeed: 2s;
     --typewriterCharacters: 13;
     --lineAnimationSpeed: 1.5s;
+    --fontFamPrimary: 'MedievalSharp', cursive;
 }
+
+/* start general */
 
 p{
     color:white;
-    max-width: 70ch;
+    font-family: var(--fontFamPrimary);
+    max-width: 55ch;
 }
 
 .container{
@@ -24,6 +28,73 @@ p{
     align-items: center;
     justify-content: space-between;
 }
+
+/* end general */
+
+/* start navbar */
+
+.sidebar{
+    padding: 2rem;
+    margin: 0;
+    list-style: none;  
+    background-color: black; 
+    width: 10%;
+    position: fixed;
+    top: 5%;
+    left: 0;
+    height: 700px;
+}
+
+.sideBarImageIntro,
+.sideBarImageAboutMe,
+.sideBarImageProjects,
+.sideBarImageSkills{
+    background-color: white;
+    width: 50px;
+    height: 80px;
+}
+
+.sideBarImageIntro{
+    clip-path: polygon(100% 0%, 100% 100%, 50% 70%, 0 100%, 0 0);
+}
+
+.sideBarImageAboutMe{
+    clip-path: polygon(51% 0, 100% 30%, 100% 70%, 50% 100%, 0 70%, 0 30%);
+}
+
+.sideBarImageProjects{
+    clip-path: polygon(100% 0, 100% 100%, 50% 70%, 0 100%, 0 0, 50% 30%);
+}
+
+.sideBarImageSkills{
+    clip-path: polygon(100% 30%, 100% 100%, 0 100%, 0 30%, 50% 0);
+}
+
+
+.sideBarImageIntro:hover,
+.sideBarImageAboutMe:hover,
+.sideBarImageProjects:hover,
+.sideBarImageSkills:hover{
+    background-color: var(--primaryColor);
+}
+
+.sideBarRow{
+    display: flex;
+    flex-direction: column;
+}
+
+.sidebar a{
+    text-decoration: none;
+    color:white;
+    font-family: var(--fontFamPrimary);
+    font-size: 1.2rem;
+}
+
+.sidebar a:hover{
+    color: var(--primaryColor);
+}
+
+/* end navbar */
 
 .headSection{
     font-family: 'Source Code Pro', sans-serif;       
@@ -62,8 +133,3 @@ p{
     height: 320px;
 }
 
-.aboutBio,
-.aboutMusic,
-.aboutGames{
-    
-}

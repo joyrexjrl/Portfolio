@@ -7,6 +7,7 @@
         <link rel="shortcut icon" href="#"> <!-- removes the can not find favicom.ico error message -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap" rel="stylesheet"> 
         <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Source+Code+Pro&display=swap" rel="stylesheet"> 
         <link rel="stylesheet" href="CssFiles/styleResets.css">
@@ -17,13 +18,30 @@
         <title>Rick Lozano Portfolio</title>
     </head>
     <body>
-        <nav class="sideBar">
-
+        <nav>
+            <ul class="sidebar sideBarRow">
+                <li class="row introBox">
+                    <div class="sideBarImageIntro"></div>
+                    <a href="#">Intro</a>
+                </li>
+                <li class="row aboutBox">
+                    <div class="sideBarImageAboutMe"></div>
+                    <a href="#">About</a>
+                </li>
+                <li class="row projectsBox">
+                    <div class="sideBarImageProjects"></div>
+                    <a href="#">Projects</a>
+                </li>
+                <li class="row skillsBox">
+                    <div class="sideBarImageSkills"></div>
+                    <a href="#">Skills</a>
+                </li>
+            </ul>
         </nav>
         <!-- top section start -->
         <section class="headSection">
             <div class="nameAnimation"> 
-                <svg id="logo" width="719" height="100" viewBox="0 0 719 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <svg id="logo" width="719" height="100" viewBox="0 0 719 100" fill="none">
                     <path d="M47.832 98L26.584 61.52H12.504V98H0.855988V8.78398H29.656C36.3973 8.78398 42.072 9.93598 46.68 12.24C51.3733 14.544 54.872 17.6587 57.176 21.584C59.48 25.5093 60.632 29.9893 60.632 35.024C60.632 41.168 58.84 46.5866 55.256 51.28C51.7573 55.9733 46.4667 59.088 39.384 60.624L61.784 98H47.832ZM12.504 52.176H29.656C35.9707 52.176 40.7067 50.64 43.864 47.568C47.0213 44.4106 48.6 40.2293 48.6 35.024C48.6 29.7333 47.0213 25.6373 43.864 22.736C40.792 19.8346 36.056 18.384 29.656 18.384H12.504V52.176Z" stroke="black" stroke-width="2"/>
                     <path d="M84.747 16.464C82.5283 16.464 80.651 15.696 79.115 14.16C77.579 12.624 76.811 10.7466 76.811 8.52798C76.811 6.30931 77.579 4.43198 79.115 2.89598C80.651 1.35998 82.5283 0.59198 84.747 0.59198C86.8803 0.59198 88.6723 1.35998 90.123 2.89598C91.659 4.43198 92.427 6.30931 92.427 8.52798C92.427 10.7466 91.659 12.624 90.123 14.16C88.6723 15.696 86.8803 16.464 84.747 16.464ZM90.379 27.856V98H78.731V27.856H90.379Z" stroke="black" stroke-width="2"/>
                     <path d="M105.879 62.8C105.879 55.5467 107.33 49.232 110.231 43.856C113.132 38.3947 117.143 34.1706 122.263 31.184C127.468 28.1973 133.399 26.704 140.055 26.704C148.674 26.704 155.756 28.7946 161.303 32.976C166.935 37.1573 170.647 42.96 172.439 50.384H159.895C158.7 46.1173 156.354 42.7466 152.855 40.272C149.442 37.7973 145.175 36.56 140.055 36.56C133.399 36.56 128.023 38.864 123.927 43.472C119.831 47.9947 117.783 54.4373 117.783 62.8C117.783 71.248 119.831 77.776 123.927 82.384C128.023 86.992 133.399 89.296 140.055 89.296C145.175 89.296 149.442 88.1013 152.855 85.712C156.268 83.3227 158.615 79.9093 159.895 75.472H172.439C170.562 82.64 166.807 88.4 161.175 92.752C155.543 97.0187 148.503 99.152 140.055 99.152C133.399 99.152 127.468 97.6586 122.263 94.672C117.143 91.6853 113.132 87.4613 110.231 82C107.33 76.5387 105.879 70.1387 105.879 62.8Z" stroke="black" stroke-width="2"/>

@@ -5,7 +5,7 @@
 }
 
 .subtitle{ /* use this for the typewriter effect */
-    color: #fff;
+    color: white;
     font-size: clamp(1rem, 3vw + 1rem, 4rem);
     position: relative;
     font-family: 'Source Code Pro', monospace;

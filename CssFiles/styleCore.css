@@ -1,16 +1,69 @@
 :root{
     /* headSection properties */
     --bgColor: rgb(70, 70, 70);
-    --typewriterSpeed: 3s;
+    --primaryColor: rgb(134, 0, 0);
+    --typewriterSpeed: 2s;
     --typewriterCharacters: 13;
+    --lineAnimationSpeed: 1.5s;
+}
+
+p{
+    color:white;
+    max-width: 70ch;
+}
+
+.container{
+    width: 80%;
+    max-width: 1160px;
+    margin-left: auto;
+    margin-right: auto;    
+}
+
+.row{
+    display: flex;    
+    align-items: center;
+    justify-content: space-between;
 }
 
 .headSection{
-    margin: 0;
     font-family: 'Source Code Pro', sans-serif;       
-    background: var(--bgColor);
+    background-color: var(--bgColor);
     min-height: 100vh;
     display: grid;
     place-content: center;
     text-align: center;
+}
+
+.aboutSection{
+    min-height: 100vh;
+    background-color: var(--bgColor);
+}
+
+.aboutSection p{
+    font-size: 1.3rem;
+}
+
+.aboutContainer{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.rightTextAlign{
+    text-align: right;
+}
+
+.aboutMePic,
+.aboutMusicPic,
+.aboutGamesPic{
+    background-color: black;
+    width: 250px;
+    height: 320px;
+}
+
+.aboutBio,
+.aboutMusic,
+.aboutGames{
+    
 }

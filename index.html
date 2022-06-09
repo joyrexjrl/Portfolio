@@ -19,27 +19,31 @@
     </head>
     <body>
         <nav>
-            <ul class="sidebar sideBarRow">
-                <li class="row introBox">
-                    <div class="sideBarImageIntro"></div>
-                    <a href="#">Intro</a>
-                </li>
-                <li class="row aboutBox">
-                    <div class="sideBarImageAboutMe"></div>
-                    <a href="#">About</a>
-                </li>
-                <li class="row projectsBox">
-                    <div class="sideBarImageProjects"></div>
-                    <a href="#">Projects</a>
-                </li>
-                <li class="row skillsBox">
-                    <div class="sideBarImageSkills"></div>
-                    <a href="#">Skills</a>
-                </li>
-            </ul>
+            <div class="sidebarImages">
+                <div class="sideBarImageIntro"></div>
+                <div class="sideBarImageAboutMe"></div>
+                <div class="sideBarImageProjects"></div>
+                <div class="sideBarImageSkills"></div>
+
+                <ul class="sidebar sideBarRow">
+                    <li class="row introBox">                    
+                        <a href="#intro">Intro</a>
+                    </li>
+                    <li class="row aboutBox">                    
+                        <a href="#about">About</a>
+                    </li>
+                    <li class="row projectsBox">                    
+                        <a href="#projects">Projects</a>
+                    </li>
+                    <li class="row skillsBox">                    
+                        <a href="#skills">Skills</a>
+                    </li>
+                </ul>
+            </div>
+            
         </nav>
         <!-- top section start -->
-        <section class="headSection">
+        <section id="intro" class="headSection">
             <div class="nameAnimation"> 
                 <svg id="logo" width="719" height="100" viewBox="0 0 719 100" fill="none">
                     <path d="M47.832 98L26.584 61.52H12.504V98H0.855988V8.78398H29.656C36.3973 8.78398 42.072 9.93598 46.68 12.24C51.3733 14.544 54.872 17.6587 57.176 21.584C59.48 25.5093 60.632 29.9893 60.632 35.024C60.632 41.168 58.84 46.5866 55.256 51.28C51.7573 55.9733 46.4667 59.088 39.384 60.624L61.784 98H47.832ZM12.504 52.176H29.656C35.9707 52.176 40.7067 50.64 43.864 47.568C47.0213 44.4106 48.6 40.2293 48.6 35.024C48.6 29.7333 47.0213 25.6373 43.864 22.736C40.792 19.8346 36.056 18.384 29.656 18.384H12.504V52.176Z" stroke="black" stroke-width="2"/>
@@ -61,7 +65,7 @@
         <!-- top section end -->
 
         <!-- about section start -->
-        <section class="aboutSection">
+        <section id="about" class="aboutSection">
             <div class="container aboutContainer">
                 <div class="aboutBio row">
                     <div class="aboutMePic">
@@ -92,17 +96,17 @@
         <!-- about section end -->
 
         <!-- project section start -->
-        <section class="projectsSection container">
-
+        <section id="projects" class="projectsSection">
+            <div class="container"></div>
         </section>
         <!-- project section end -->  
 
         <!-- skills/ footer section start -->
-        <section class="skillsSection container">
-
+        <section id="skills" class="skillsSection">
+            <div class="container"></div>
         </section>
-        <footer class="footerSection container">
-
+        <footer class="footerSection">
+            <div class="container"></div>
         </footer>
         <!-- skills/ footer section start -->
                                   

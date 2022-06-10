@@ -1,5 +1,14 @@
-.nameAnimation{
-    padding: 0 0 1rem 0;
+.nameAnimationLarge,
+.nameAnimationSmall{
+    padding: 15rem 0;
+}
+
+.nameAnimationLarge{
+    display: none;
+}
+
+.nameAnimationSmall{
+    display: block;
 }
 
 #logo{
@@ -7,62 +16,62 @@
 }
 
 #logo path:nth-child(1){
-    stroke-dasharray: 488px;
-    stroke-dashoffset: 488px;
+    stroke-dasharray: 499px;
+    stroke-dashoffset: 499px;
     animation: lineAnim var(--lineAnimationSpeed) ease forwards;
 }
 
 #logo path:nth-child(2){
-    stroke-dasharray: 213px;
-    stroke-dashoffset: 213px;
+    stroke-dasharray: 223px;
+    stroke-dashoffset: 223px;
     animation: lineAnim var(--lineAnimationSpeed) ease forwards 0.3s;
 }
 
 #logo path:nth-child(3){
-    stroke-dasharray: 354px;
-    stroke-dashoffset: 354px;
+    stroke-dasharray: 270px;
+    stroke-dashoffset: 270px;
     animation: lineAnim var(--lineAnimationSpeed) ease forwards 0.6s;
 }
 
 #logo path:nth-child(4){
-    stroke-dasharray: 416px;
-    stroke-dashoffset: 416px;
+    stroke-dasharray: 378px;
+    stroke-dashoffset: 378px;
     animation: lineAnim var(--lineAnimationSpeed) ease forwards 0.9s;
 }
 
 #logo path:nth-child(5){
-    stroke-dasharray: 265px;
-    stroke-dashoffset: 265px;
+    stroke-dasharray: 278px;
+    stroke-dashoffset: 278px;
     animation: lineAnim var(--lineAnimationSpeed) ease forwards 1.2s;
 }
 
 #logo path:nth-child(6){
-    stroke-dasharray: 385px;
-    stroke-dashoffset: 385px;
+    stroke-dasharray: 315px;
+    stroke-dashoffset: 315px;
     animation: lineAnim var(--lineAnimationSpeed) ease forwards 1.5s;
 }
 
 #logo path:nth-child(7){
-    stroke-dasharray: 325px;
-    stroke-dashoffset: 325px;
+    stroke-dasharray: 318px;
+    stroke-dashoffset: 318px;
     animation: lineAnim var(--lineAnimationSpeed) ease forwards 1.8s;
 }
 
 #logo path:nth-child(8){
-    stroke-dasharray: 450px;
-    stroke-dashoffset: 480px;
+    stroke-dasharray: 368px;
+    stroke-dashoffset: 368px;
     animation: lineAnim var(--lineAnimationSpeed) ease forwards 2.1s;
 }
 
 #logo path:nth-child(9){
-    stroke-dasharray: 375px;
-    stroke-dashoffset: 375px;
+    stroke-dasharray: 333px;
+    stroke-dashoffset: 333px;
     animation: lineAnim var(--lineAnimationSpeed) ease forwards 2.4s;
 }
 
 #logo path:nth-child(10){
-    stroke-dasharray: 385px;
-    stroke-dashoffset: 385px;
+    stroke-dasharray: 315px;
+    stroke-dashoffset: 315px;
     animation: lineAnim var(--lineAnimationSpeed) ease forwards 2.7s;
 }
 
@@ -79,4 +88,15 @@
     to{
         fill: var(--primaryColor);
     }
+}
+
+@media (min-width: 800px){
+    .nameAnimationSmall{        
+        display: none;
+    }
+
+    .nameAnimationLarge{        
+        display: block;
+        padding: 20rem 0;
+    }    
 }

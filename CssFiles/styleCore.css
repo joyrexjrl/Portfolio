@@ -6,6 +6,17 @@
     --typewriterCharacters: 13;
     --lineAnimationSpeed: 1.5s;
     --fontFamPrimary: 'MedievalSharp', cursive;
+
+    --fontSize1000: 4rem;
+    --fontSize800: 3rem;
+    --fontSize600: 2.5rem;
+    --fontSize400: 2rem;
+    --fontSize200: 1.5rem;
+    --fontSize100: 1rem;
+    --fontSize90: .95rem;
+    --fontSize80: .8rem;
+    --fontSize60: .5rem;
+    --fontSize40: .2rem;
 }
 
 body::-webkit-scrollbar{
@@ -43,16 +54,61 @@ p{
 
 /* end general */
 
+/* start back ground logos */
+
+.headSection,
+.aboutSection,
+.projectsSection,
+.skillsSection{
+    position: relative;
+    z-index: -10;
+}
+
+.headSectionLogo,
+.aboutSectionLogo,
+.projectsSectionLogo,
+.skillsSectionLogo{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgb(60, 60, 60);
+    width: 380px;
+    height: 600px;  
+    z-index: -1;
+}
+
+.headSectionLogo{
+    clip-path: polygon(100% 0%, 100% 100%, 50% 70%, 0 100%, 0 0);
+}
+
+.aboutSectionLogo{
+    clip-path: polygon(51% 0, 100% 30%, 100% 70%, 50% 100%, 0 70%, 0 30%);
+}
+
+.projectsSectionLogo{
+    clip-path: polygon(100% 0, 100% 100%, 50% 70%, 0 100%, 0 0, 50% 30%);
+}
+
+.skillsSectionLogo{
+    clip-path: polygon(100% 30%, 100% 100%, 0 100%, 0 30%, 50% 0);
+}
+
+/* end back ground logos */
+
 /* start navbar */
 
 .sidebarImages{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     position: fixed;
     width: 8rem;
     padding: 2rem;
-    background-color: black; 
-    top: 5%;
+    background-color: rgba(0, 0, 0, 0.315); 
+    top: 0;
     left: 0;
-    height: 700px;
+    height: 50%;
     z-index: 10;
 }
 
@@ -60,7 +116,7 @@ p{
     padding: 3rem 2rem;
     margin: 0;
     list-style: none;  
-    background-color: black; 
+    background-color: rgba(0, 0, 0, 0.315); 
     position: absolute;
     align-items: flex-end;
     justify-content: space-between;
@@ -83,9 +139,10 @@ p{
 .sideBarImageProjects,
 .sideBarImageSkills{
     background-color: white;
-    width: 50px;
+    width: 80%;
     height: 80px;
     pointer-events: none;
+    transition: all 200ms ease;
 }
 
 .sideBarImageIntro{
@@ -104,14 +161,6 @@ p{
     clip-path: polygon(100% 30%, 100% 100%, 0 100%, 0 30%, 50% 0);
 }
 
-
-/*.sideBarImageIntro:hover,
-.sideBarImageAboutMe:hover,
-.sideBarImageProjects:hover,
-.sideBarImageSkills:hover{
-    background-color: var(--primaryColor);
-}*/
-
 .sideBarRow{
     display: flex;
     flex-direction: column;
@@ -128,6 +177,10 @@ p{
     color: var(--primaryColor);
 }
 
+.navLocation{
+    background-color: var(--primaryColor);
+}
+
 /* end navbar */
 
 /* start head section */
@@ -139,8 +192,6 @@ p{
     display: grid;
     place-content: center;
     text-align: center;
-
-    border: 3px solid rgb(122, 231, 180);
 }
 
 /* end head section */
@@ -153,7 +204,7 @@ p{
 }
 
 .aboutSection p{
-    font-size: 1.3rem;
+    font-size: var(--fontSize90);
 }
 
 .aboutContainer{
@@ -165,6 +216,12 @@ p{
 
 .rightTextAlign{
     text-align: right;
+}
+
+.aboutBio,
+.aboutMusic,
+.aboutGames{
+    gap: 2rem;
 }
 
 .aboutMePic,
@@ -182,8 +239,6 @@ p{
 .projectsSection{
     min-height: 100vh;
     background-color: var(--bgColor);
-
-    border: 3px solid rgb(146, 122, 231);
 }
 
 /* end projects section */
@@ -191,7 +246,7 @@ p{
 /* start skills section */
 
 .skillsSection{
-    min-height: 85vh;
+    min-height: 100vh;
     background-color: var(--bgColor);
 }
 
@@ -200,10 +255,20 @@ p{
 /* start footer section */
 
 .footerSection{
-    min-height: 15vh;
     background-color: var(--bgColor);
-
-    border: 3px solid rgb(230, 53, 135);
+    height: 15%;
 }
 
 /* end footer section */
+
+@media (min-width: 650px) {
+    .aboutSection p{
+        font-size: var(--fontSize100);
+    }
+}
+
+@media (min-width: 1000px) {
+    .aboutSection p{
+        font-size: var(--fontSize200);        
+    }
+}

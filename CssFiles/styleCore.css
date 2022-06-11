@@ -227,7 +227,8 @@ p{
 .aboutMePic,
 .aboutMusicPic,
 .aboutGamesPic{
-    background-color: black;
+    /*background-color: black;*/
+    /*border: 1px solid white;*/
     width: 250px;
     height: 320px;
 }

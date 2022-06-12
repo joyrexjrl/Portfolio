@@ -12,6 +12,7 @@
     --fontSize600: 2.5rem;
     --fontSize400: 2rem;
     --fontSize200: 1.5rem;
+    --fontSize150: 1.25rem;
     --fontSize100: 1rem;
     --fontSize90: .95rem;
     --fontSize80: .8rem;
@@ -203,10 +204,6 @@ p{
     background-color: var(--bgColor);
 }
 
-.aboutSection p{
-    font-size: var(--fontSize90);
-}
-
 .aboutContainer{
     min-height: 100vh;
     display: flex;
@@ -218,9 +215,15 @@ p{
     text-align: right;
 }
 
+.aboutMeText,
+.aboutMusicText,
+.aboutGamesText{
+    font-size: var(--fontSize80);
+}
+
 .aboutBio,
 .aboutMusic,
-.aboutGames{
+.aboutGames{    
     gap: 2rem;
 }
 
@@ -263,13 +266,17 @@ p{
 /* end footer section */
 
 @media (min-width: 650px) {
-    .aboutSection p{
+    .aboutMeText,
+    .aboutMusicText,
+    .aboutGamesText{
         font-size: var(--fontSize100);
     }
 }
 
 @media (min-width: 1000px) {
-    .aboutSection p{
-        font-size: var(--fontSize200);        
+    .aboutMeText,
+    .aboutMusicText,
+    .aboutGamesText{
+        font-size: var(--fontSize150);        
     }
 }

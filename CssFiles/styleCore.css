@@ -10,6 +10,7 @@
     --fontSize1000: 4rem;
     --fontSize800: 3rem;
     --fontSize600: 2.5rem;
+    --fontSize500: 2.25rem;
     --fontSize400: 2rem;
     --fontSize200: 1.5rem;
     --fontSize150: 1.25rem;
@@ -40,11 +41,20 @@ p{
     max-width: 55ch;
 }
 
+h1, h2, h3{
+    font-family: var(--fontFamPrimary);
+    text-align: center;    
+    color: white;
+}
+
+h2{
+    font-size: var(--fontSize800);
+}
+
 .container{
     width: 80%;
     max-width: 1160px;
-    margin-left: auto;
-    margin-right: auto;    
+    margin-inline: auto; 
 }
 
 .row{
@@ -244,6 +254,56 @@ p{
     min-height: 100vh;
     background-color: var(--bgColor);
 }
+
+.projectGridContainer{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.projectCard{
+    position: relative;
+    overflow: hidden;
+    max-width: 550px;
+}
+
+.projectCard > img{
+    display: block;
+    width: 100%;
+    aspect-ratio: 1.2 / .8;
+    object-fit: cover;
+    object-position: center;
+}
+
+.projectOverlay{
+    position: absolute;
+    inset: 0;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;  
+    justify-content: space-between;      
+    background-color: rgba(0,0,0,0.8);
+    backdrop-filter: blur(10px);
+    opacity: 0;
+    transition: opacity 0.25s;
+}
+
+.projectOverlayHeading{
+    font-size: var(--fontSize400);
+}
+
+.projectOverlayInfo{
+    text-align: right;    
+}
+
+.projectOverlayLinks{
+    display: flex;
+    justify-content: space-between;
+}
+
+.projectOverlay:hover{
+    opacity: 1;
+}
+
 
 /* end projects section */
 

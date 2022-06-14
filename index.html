@@ -19,29 +19,32 @@
         <title>Rick Lozano Portfolio</title>
     </head>
     <body>
-        <nav>
-            <div class="sidebarImages">
-                <div id="imageIntro" class="sideBarImageIntro"></div>
-                <div id="imageAbout" class="sideBarImageAboutMe"></div>
-                <div id="imageProjects" class="sideBarImageProjects"></div>
-                <div id="imageSkills" class="sideBarImageSkills"></div>
+        <header>
+           <nav>
+                <div class="sidebarImages">
+                    <div id="imageIntro" class="sideBarImageIntro"></div>
+                    <div id="imageAbout" class="sideBarImageAboutMe"></div>
+                    <div id="imageProjects" class="sideBarImageProjects"></div>
+                    <div id="imageSkills" class="sideBarImageSkills"></div>
 
-                <ul class="sidebar sideBarRow">
-                    <li class="row introBox">                    
-                        <a href="#intro">Intro</a>
-                    </li>
-                    <li class="row aboutBox">                    
-                        <a href="#about">About</a>
-                    </li>
-                    <li class="row projectsBox">                    
-                        <a href="#projects">Projects</a>
-                    </li>
-                    <li class="row skillsBox">                    
-                        <a href="#skills">Skills</a>
-                    </li>
-                </ul>
-            </div>            
-        </nav>
+                    <ul class="sidebar sideBarRow">
+                        <li class="row introBox">                    
+                            <a href="#intro">Intro</a>
+                        </li>
+                        <li class="row aboutBox">                    
+                            <a href="#about">About</a>
+                        </li>
+                        <li class="row projectsBox">                    
+                            <a href="#projects">Projects</a>
+                        </li>
+                        <li class="row skillsBox">                    
+                            <a href="#skills">Skills</a>
+                        </li>
+                    </ul>
+                </div>            
+            </nav> 
+        </header>
+        
         <!-- top section start -->
         <section id="intro" class="headSection">
             <div class="nameAnimationLarge">
@@ -87,17 +90,18 @@
         <!-- about section start -->
         <section id="about" class="aboutSection">
             <div class="container aboutContainer">
+                <h2>About</h2>
                 <div class="aboutBio row">
                     <div class="aboutMePic">
                         <img src="images/aboutMeSVG.svg" alt="aboutSVG">                        
                     </div>
                     <div>
-                        <p class="aboutMeText">Hello, my name is Rick Lozano. I am currently a truck driver looking to escape and move into a better work life. I have been into IT type work for the longest time, about 25 years from building computers, to general repairs, upgrading, virus removals and info backups. I have in the past 3 or so years been working on learning programming (java, c#, and python). My goal aside from getting out of driving is to eventually make a video game but ultimately, get into a programming based carrier. After watching some videos and taking a few courses, I have realized I enjoy front end web development.</p>
+                        <p class="aboutMeText">Hello, my name is Rick Lozano. I am currently a truck driver looking to escape and move into a better work life. I have been into IT type work for about 25 years, from building computers to general repairs, upgrading, virus removals and info backups. I have in the past 3 or so years been working on learning programming (java, c#, and python). My goal aside from getting out of driving is to eventually make a video game but ultimately, get into a programming based carrier. After watching some videos and taking a few courses, I have realized I enjoy front end web development.</p>
                     </div>
                 </div>
                 <div class="aboutMusic row">
                     <div class="rightTextAlign">
-                        <p class="aboutMusicText">For a good 27 years of my life I have been playing music. I taught myself piano being inspired by Rachmaninov, and taught myself bass after listening to Primus. Of course I see the top of the mountain in anything that interest me and I do everything I can to get there in the fastest most efficient way possible. I have been in a good number of bands over the years. My personal best achievement with music is writing and recording an album with a friend of mine. A good portion of my day is spent listening to music.</p>
+                        <p class="aboutMusicText">For a good 27 years of my life I have been playing music. I taught myself piano being inspired by Rachmaninov, and taught myself bass after listening to Primus. Of course I see the top of the mountain in anything that interest me and I do everything I can to get there in the fastest most efficient way possible. My personal best achievement with music is writing and recording an album with a friend of mine. A good portion of my day is spent listening to music.</p>
                     </div>
                     <div class="aboutMusicPic">
                         <img src="images/aboutMeMusicSVG.svg" alt="aboutMusicSVG">
@@ -108,7 +112,7 @@
                         <img src="images/aboutMeGamesSVG.svg" alt="aboutMeGamesSVG">
                     </div>
                     <div>
-                        <p class="aboutGamesText">As stated before my ultimate goal is to create a video game. I have played games since I was about 6 starting with the Atari 2600. I have ran many table top games such as Dungeons and Dragons (2.5e and 3.5 mainly), Shadowrun, and some of the White Wolf games. I have created my own table top game systems and worlds over the past 25 or so years. The desire to get into programming is to create these worlds I have trapped in my head, so more people other than my friends I have ran these games for, can play and experience them.</p>
+                        <p class="aboutGamesText">I have played games since I was about 6 starting with the Atari 2600. I have ran many table top games such as Dungeons and Dragons (2.5e and 3.5 mainly), Shadowrun, and some of the White Wolf games. I have created my own table top game systems and worlds over the past 25 or so years. The desire to get into programming is to create these worlds I have trapped in my head, so more people can play and experience them.</p>
                     </div>
                 </div>
             </div>
@@ -119,6 +123,27 @@
         <!-- project section start -->
         <section id="projects" class="projectsSection">
             <div class="container">
+                <h2>Projects</h2>
+                <!-- project card start -->
+                <div class="projectGridContainer">
+                    <div class="projectCard">
+                        <img src="images/creativeHookersLogo.webp" alt="sitelogo">
+                        <div class="projectOverlay">
+                            <div class="projectOverlayHeading">
+                                <h3>Creative Hookers</h3>                               
+                            </div>                            
+                            <div class="projectOverlayInfo">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt iure laudantium possimus ad quas quam, earum saepe rerum voluptas fugiat.</p>
+                            </div>
+                            <div class="projectOverlayLinks">
+                                <a href="#">Goto</a>
+                                <a href="#">Git</a>
+                            </div>
+                        </div>
+                    </div>                    
+                </div>
+                <!-- project card end -->
+
 
             </div>
             <div class="projectsSectionLogo"></div>
@@ -128,14 +153,16 @@
         <!-- skills/ footer section start -->
         <section id="skills" class="skillsSection">
             <div class="container">
+                <h2>Skills</h2>
                 
             </div>            
             <div class="skillsSectionLogo"></div>
         </section>
-        <div class="footerSection">
+
+        <footer class="footerSection">
             <p>test</p>
-        </div>        
+        </footer>        
         <!-- skills/ footer section start -->
-                                  
+        <script src="https://kit.fontawesome.com/532e282bae.js" crossorigin="anonymous"></script>
     </body>
 </html>

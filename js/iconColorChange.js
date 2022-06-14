@@ -3,7 +3,7 @@ const sectionOne = document.querySelector(".headSection");
 
 const options= {
     rootMargin: "-25% 0% -25% 0%",
-    threshold: 0.5
+    threshold: 0.4
 };
 
 const observer = new IntersectionObserver(function(entries, observer) {

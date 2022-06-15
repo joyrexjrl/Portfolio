@@ -319,11 +319,11 @@ h2{
     background-color: var(--bgColor);
 }
 
-.aboutContainer{
-    min-height: 100vh;
+.aboutContainer{    
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-between;
+    gap: 3rem;
 }
 
 .rightTextAlign{
@@ -345,8 +345,6 @@ h2{
 .aboutMePic,
 .aboutMusicPic,
 .aboutGamesPic{
-    /*background-color: black;*/
-    /*border: 1px solid white;*/
     width: 250px;
     height: 320px;
 }

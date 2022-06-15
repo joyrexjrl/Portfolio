@@ -18,17 +18,17 @@ const observer = new IntersectionObserver(function(entries, observer) {
             document.getElementById("imageIntro").classList.remove("navLocation");
         }
 
-        if(entry.target === document.getElementById("about")){
-            document.getElementById("imageAbout").classList.add("navLocation");
-        }else{
-            document.getElementById("imageAbout").classList.remove("navLocation");
-        }
-
         if(entry.target === document.getElementById("projects")){
             document.getElementById("imageProjects").classList.add("navLocation");
         }else{
             document.getElementById("imageProjects").classList.remove("navLocation");
         }
+
+        if(entry.target === document.getElementById("about")){
+            document.getElementById("imageAbout").classList.add("navLocation");
+        }else{
+            document.getElementById("imageAbout").classList.remove("navLocation");
+        }        
 
         if(entry.target === document.getElementById("skills")){
             document.getElementById("imageSkills").classList.add("navLocation");

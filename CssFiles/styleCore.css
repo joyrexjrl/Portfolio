@@ -96,11 +96,12 @@ h2{
 }
 
 .aboutSectionLogo{
-    clip-path: polygon(51% 0, 100% 30%, 100% 70%, 50% 100%, 0 70%, 0 30%);
+    clip-path: polygon(100% 0, 100% 100%, 50% 70%, 0 100%, 0 0, 50% 30%);
+    
 }
 
 .projectsSectionLogo{
-    clip-path: polygon(100% 0, 100% 100%, 50% 70%, 0 100%, 0 0, 50% 30%);
+    clip-path: polygon(51% 0, 100% 30%, 100% 70%, 50% 100%, 0 70%, 0 30%);
 }
 
 .skillsSectionLogo{
@@ -162,12 +163,12 @@ h2{
     clip-path: polygon(100% 0%, 100% 100%, 50% 70%, 0 100%, 0 0);
 }
 
-.sideBarImageAboutMe{
-    clip-path: polygon(51% 0, 100% 30%, 100% 70%, 50% 100%, 0 70%, 0 30%);
-}
-
 .sideBarImageProjects{
     clip-path: polygon(100% 0, 100% 100%, 50% 70%, 0 100%, 0 0, 50% 30%);
+}
+
+.sideBarImageAboutMe{
+    clip-path: polygon(51% 0, 100% 30%, 100% 70%, 50% 100%, 0 70%, 0 30%);
 }
 
 .sideBarImageSkills{
@@ -209,6 +210,108 @@ h2{
 
 /* end head section */
 
+/* start projects section */
+
+.projectsSection{
+    min-height: 100vh;
+    background-color: var(--bgColor);
+}
+
+.projectGridContainer{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.projectCard{
+    position: relative;
+    overflow: hidden;
+    max-width: 550px;
+}
+
+.projectCard > img{
+    aspect-ratio: 1.2 / .8;
+    object-fit: cover;
+    object-position: center;
+}
+
+.projectOverlay{
+    position: absolute;
+    inset: 0;
+    padding: 1.5rem;
+    border: 3px solid var(--primaryColor);
+    display: flex;
+    flex-direction: column;  
+    justify-content: space-between;      
+    background-color: rgba(0,0,0,0.8);
+    backdrop-filter: blur(10px);
+    opacity: 0;
+    transition: opacity 0.25s;
+}
+
+.projectOverlayHeading{
+    font-size: var(--fontSize400);
+}
+
+.projectOverlayInfo{
+    text-align: right;    
+}
+
+.projectOverlayLinks{
+    display: flex;
+    justify-content: space-between;
+}
+
+.gotoLink,
+.gitLink{
+    cursor: pointer;
+    position: relative;
+    background-color: black;
+    border: 3px solid var(--primaryColor);
+    font-family: var(--fontFamPrimary);
+    font-size: var(--fontSize150);
+    min-width: 4rem;
+    padding: .25rem 0;
+    text-align: center;
+    color: white;
+    text-decoration: none;
+    z-index: 1;
+    transform-origin: right;
+    transition: border 200ms ease-in;
+}
+
+.gotoLink:hover,
+.gitLink:hover{   
+    border: 3px solid black;
+    transform-origin: left;
+}
+
+.gotoLink::after,
+.gitLink::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--primaryColor);
+    z-index: -1;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 200ms ease-in;
+}
+
+.gotoLink:hover::after,
+.gitLink:hover::after{
+    transform: scaleX(1);    
+    transform-origin: left;    
+}
+
+.projectOverlay:hover{
+    opacity: 1;
+}
+
+/* end projects section */
+
 /* start about section */
 
 .aboutSection{
@@ -249,63 +352,6 @@ h2{
 }
 
 /* end about section */
-
-/* start projects section */
-
-.projectsSection{
-    min-height: 100vh;
-    background-color: var(--bgColor);
-}
-
-.projectGridContainer{
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-}
-
-.projectCard{
-    position: relative;
-    overflow: hidden;
-    max-width: 550px;
-}
-
-.projectCard > img{
-    aspect-ratio: 1.2 / .8;
-    object-fit: cover;
-    object-position: center;
-}
-
-.projectOverlay{
-    position: absolute;
-    inset: 0;
-    padding: 2rem;
-    display: flex;
-    flex-direction: column;  
-    justify-content: space-between;      
-    background-color: rgba(0,0,0,0.8);
-    backdrop-filter: blur(10px);
-    opacity: 0;
-    transition: opacity 0.25s;
-}
-
-.projectOverlayHeading{
-    font-size: var(--fontSize400);
-}
-
-.projectOverlayInfo{
-    text-align: right;    
-}
-
-.projectOverlayLinks{
-    display: flex;
-    justify-content: space-between;
-}
-
-.projectOverlay:hover{
-    opacity: 1;
-}
-
-
-/* end projects section */
 
 /* start skills section */
 

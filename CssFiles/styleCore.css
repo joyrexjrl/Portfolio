@@ -63,6 +63,10 @@ h2{
     justify-content: space-between;
 }
 
+.floatAbove{
+    z-index: 1;
+}
+
 /* end general */
 
 /* start back ground logos */
@@ -72,7 +76,6 @@ h2{
 .projectsSection,
 .skillsSection{
     position: relative;
-    z-index: -10;
 }
 
 .headSectionLogo,
@@ -86,7 +89,6 @@ h2{
     background-color: rgb(60, 60, 60);
     width: 380px;
     height: 600px;  
-    z-index: -1;
 }
 
 .headSectionLogo{
@@ -267,8 +269,6 @@ h2{
 }
 
 .projectCard > img{
-    display: block;
-    width: 100%;
     aspect-ratio: 1.2 / .8;
     object-fit: cover;
     object-position: center;

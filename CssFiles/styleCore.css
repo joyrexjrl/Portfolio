@@ -17,7 +17,7 @@
     --fontSize100: 1rem;
     --fontSize90: .95rem;
     --fontSize80: .8rem;
-    --fontSize60: .5rem;
+    --fontSize60: .6rem;
     --fontSize40: .2rem;
 }
 
@@ -123,7 +123,7 @@ h2{
     top: 0;
     left: 0;
     height: 50%;
-    z-index: 10;
+    z-index: 100;
 }
 
 .sidebar{
@@ -218,7 +218,9 @@ h2{
 }
 
 .projectGridContainer{
+    margin-top: 2rem;
     display: grid;
+    gap: 2rem;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
 
@@ -237,7 +239,7 @@ h2{
 .projectOverlay{
     position: absolute;
     inset: 0;
-    padding: 1.5rem;
+    padding: .8rem;
     border: 3px solid var(--primaryColor);
     display: flex;
     flex-direction: column;  
@@ -249,11 +251,15 @@ h2{
 }
 
 .projectOverlayHeading{
-    font-size: var(--fontSize400);
+    font-size: var(--fontSize200);
 }
 
 .projectOverlayInfo{
     text-align: right;    
+}
+
+.projectOverlayInfo p{
+    font-size: var(--fontSize60);
 }
 
 .projectOverlayLinks{
@@ -268,9 +274,9 @@ h2{
     background-color: black;
     border: 3px solid var(--primaryColor);
     font-family: var(--fontFamPrimary);
-    font-size: var(--fontSize150);
-    min-width: 4rem;
-    padding: .25rem 0;
+    font-size: var(--fontSize80);
+    min-width: 3rem;
+    padding: .15rem 0;
     text-align: center;
     color: white;
     text-decoration: none;
@@ -374,6 +380,29 @@ h2{
     .aboutMusicText,
     .aboutGamesText{
         font-size: var(--fontSize100);
+    }
+
+    .projectGridContainer{
+        grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    }
+
+    .projectOverlay{
+        padding: 1.5rem;
+    }
+
+    .projectOverlayHeading{
+        font-size: var(--fontSize400);
+    }
+
+    .projectOverlayInfo p{
+        font-size: var(--fontSize100);
+    }
+
+    .gotoLink,
+    .gitLink{
+        font-size: var(--fontSize150);
+        min-width: 5rem;
+        padding: .25rem 0;
     }
 }
 

@@ -225,12 +225,15 @@ h2{
 }
 
 .projectCard{
+    margin-inline: auto;
     position: relative;
     overflow: hidden;
+    width: 100%;
     max-width: 550px;
 }
 
 .projectCard > img{
+    width: 100%;
     aspect-ratio: 1.2 / .8;
     object-fit: cover;
     object-position: center;

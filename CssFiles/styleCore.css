@@ -88,7 +88,12 @@ h2{
     transform: translate(-50%, -50%);
     background-color: rgb(60, 60, 60);
     width: 380px;
-    height: 600px;  
+    height: 600px;
+    transition: all 1000ms ease;
+}
+
+.highlightedSectionLogo{
+    background-color:rgb(85, 0, 0);
 }
 
 .headSectionLogo{

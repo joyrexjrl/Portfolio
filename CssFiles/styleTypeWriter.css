@@ -1,4 +1,4 @@
-.typewriterAnimation, .nameAnimation{
+.typewriter_animation, .name_animation{
     display: grid;
     place-content: center;
     text-align: center;

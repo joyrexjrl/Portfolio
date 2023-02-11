@@ -1,6 +1,6 @@
 :root{
     /* headSection properties */
-    --bgColor: rgb(70, 70, 70);
+    --bgColor: rgb(40, 40, 40);
     --primaryColor: rgb(134, 0, 0);
     --typewriterSpeed: 2s;
     --typewriterCharacters: 13;
@@ -63,7 +63,7 @@ h2{
     justify-content: space-between;
 }
 
-.floatAbove{
+.float_above{
     z-index: 1;
 }
 
@@ -71,17 +71,17 @@ h2{
 
 /* start back ground logos */
 
-.headSection,
-.aboutSection,
-.projectsSection,
-.skillsSection{
+.head_section,
+.about_section,
+.projects_section,
+.skills_section{
     position: relative;
 }
 
-.headSectionLogo,
-.aboutSectionLogo,
-.projectsSectionLogo,
-.skillsSectionLogo{
+.head_section_logo,
+.about_section_logo,
+.projects_section_logo,
+.skills_section_logo{
     position: absolute;
     top: 50%;
     left: 50%;
@@ -92,24 +92,24 @@ h2{
     transition: all 1000ms ease;
 }
 
-.highlightedSectionLogo{
+.highlighted_section_logo{
     background-color:rgb(85, 0, 0);
 }
 
-.headSectionLogo{
+.head_section_logo{
     clip-path: polygon(100% 0%, 100% 100%, 50% 70%, 0 100%, 0 0);
 }
 
-.aboutSectionLogo{
+.about_section_logo{
     clip-path: polygon(100% 0, 100% 100%, 50% 70%, 0 100%, 0 0, 50% 30%);
     
 }
 
-.projectsSectionLogo{
+.projects_section_logo{
     clip-path: polygon(51% 0, 100% 30%, 100% 70%, 50% 100%, 0 70%, 0 30%);
 }
 
-.skillsSectionLogo{
+.skills_section_logo{
     clip-path: polygon(100% 30%, 100% 100%, 0 100%, 0 30%, 50% 0);
 }
 
@@ -117,7 +117,7 @@ h2{
 
 /* start navbar */
 
-.sidebarImages{
+.sidebar_images{
     background-image: url(../images/sideBarSVG.svg);
     display: flex;
     flex-direction: column;
@@ -153,10 +153,10 @@ h2{
     opacity: 1;
 }
 
-.sideBarImageIntro,
-.sideBarImageAboutMe,
-.sideBarImageProjects,
-.sideBarImageSkills{
+.sidebar_image_intro,
+.sidebar_image_about_me,
+.sidebar_image_projects,
+.sidebar_image_skills{
     background-color: rgba(0, 0, 0, 0.315);
     width: 80%;
     height: 80px;
@@ -164,23 +164,23 @@ h2{
     transition: all 200ms ease;
 }
 
-.sideBarImageIntro{
+.sidebar_image_intro{
     clip-path: polygon(100% 0%, 100% 100%, 50% 70%, 0 100%, 0 0);
 }
 
-.sideBarImageProjects{
+.sidebar_image_projects{
     clip-path: polygon(100% 0, 100% 100%, 50% 70%, 0 100%, 0 0, 50% 30%);
 }
 
-.sideBarImageAboutMe{
+.sidebar_image_about_me{
     clip-path: polygon(51% 0, 100% 30%, 100% 70%, 50% 100%, 0 70%, 0 30%);
 }
 
-.sideBarImageSkills{
+.sidebar_image_skills{
     clip-path: polygon(100% 30%, 100% 100%, 0 100%, 0 30%, 50% 0);
 }
 
-.sideBarRow{
+.sidebar_row{
     display: flex;
     flex-direction: column;
 }
@@ -196,7 +196,7 @@ h2{
     color: var(--primaryColor);
 }
 
-.navLocation{
+.nav_location{
     background-color: var(--primaryColor);
 }
 
@@ -204,7 +204,7 @@ h2{
 
 /* start head section */
 
-.headSection{
+.head_section{
     font-family: 'Source Code Pro', sans-serif;       
     background-color: var(--bgColor);
     min-height: 100vh;
@@ -217,19 +217,19 @@ h2{
 
 /* start projects section */
 
-.projectsSection{
+.projects_section{
     min-height: 100vh;
     background-color: var(--bgColor);
 }
 
-.projectGridContainer{
+.project_grid_container{
     margin-top: 2rem;
     display: grid;
     gap: 2rem;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
 
-.projectCard{
+.project_card{
     margin-inline: auto;
     position: relative;
     overflow: hidden;
@@ -237,14 +237,14 @@ h2{
     max-width: 550px;
 }
 
-.projectCard > img{
+.project_card > img{
     width: 100%;
     aspect-ratio: 1.2 / .8;
     object-fit: cover;
     object-position: center;
 }
 
-.projectOverlay{
+.project_overlay{
     position: absolute;
     inset: 0;
     padding: .8rem;
@@ -258,25 +258,25 @@ h2{
     transition: opacity 0.25s;
 }
 
-.projectOverlayHeading{
+.project_overlay_heading{
     font-size: var(--fontSize200);
 }
 
-.projectOverlayInfo{
+.project_overlay_info{
     text-align: right;    
 }
 
-.projectOverlayInfo p{
+.project_overlay_info p{
     font-size: var(--fontSize60);
 }
 
-.projectOverlayLinks{
+.project_overlay_links{
     display: flex;
     justify-content: space-between;
 }
 
-.gotoLink,
-.gitLink{
+.goto_link,
+.git_link{
     cursor: pointer;
     position: relative;
     background-color: black;
@@ -293,14 +293,14 @@ h2{
     transition: border 200ms ease-in;
 }
 
-.gotoLink:hover,
-.gitLink:hover{   
+.goto_link:hover,
+.git_link:hover{   
     border: 3px solid black;
     transform-origin: left;
 }
 
-.gotoLink::after,
-.gitLink::after{
+.goto_link::after,
+.git_link::after{
     content: '';
     position: absolute;
     top: 0;
@@ -314,13 +314,13 @@ h2{
     transition: transform 200ms ease-in;
 }
 
-.gotoLink:hover::after,
-.gitLink:hover::after{
+.goto_link:hover::after,
+.git_link:hover::after{
     transform: scaleX(1);    
     transform-origin: left;    
 }
 
-.projectOverlay:hover{
+.project_overlay:hover{
     opacity: 1;
 }
 
@@ -328,37 +328,41 @@ h2{
 
 /* start about section */
 
-.aboutSection{
+.about_section{
     min-height: 100vh;
     background-color: var(--bgColor);
 }
 
-.aboutContainer{    
+.about_container{    
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     gap: 3rem;
 }
 
-.rightTextAlign{
+.right_text_align{
     text-align: right;
 }
 
-.aboutMeText,
-.aboutMusicText,
-.aboutGamesText{
+.about_me_text{
     font-size: var(--fontSize80);
+    max-width: 50ch;
 }
 
-.aboutBio,
-.aboutMusic,
-.aboutGames{    
+.about_me_text_finisher{
+    margin-inline: auto;
+    text-align: center;
+}
+
+.about_bio,
+.about_music,
+.about_games{    
     gap: 2rem;
 }
 
-.aboutMePic,
-.aboutMusicPic,
-.aboutGamesPic{
+.about_me_pic,
+.about_music_pic,
+.about_games_pic{
     width: 250px;
     height: 320px;
 }
@@ -367,16 +371,21 @@ h2{
 
 /* start skills section */
 
-.skillsSection{
+.skills_section{
     min-height: 100vh;
     background-color: var(--bgColor);
+}
+
+.line_divider_image{
+    width: 100%;
+    margin-inline: auto;
 }
 
 /* end skills section */
 
 /* start footer section */
 
-.footerSection{
+.footer_section{
     background-color: var(--bgColor);
     height: 15%;
 }
@@ -384,30 +393,30 @@ h2{
 /* end footer section */
 
 @media (min-width: 650px) {
-    .aboutMeText,
-    .aboutMusicText,
-    .aboutGamesText{
+    .about_me_text,
+    .about_music_text,
+    .about_games_text{
         font-size: var(--fontSize100);
     }
 
-    .projectGridContainer{
+    .project_grid_container{
         grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
     }
 
-    .projectOverlay{
+    .project_overlay{
         padding: 1.5rem;
     }
 
-    .projectOverlayHeading{
+    .project_overlay_heading{
         font-size: var(--fontSize400);
     }
 
-    .projectOverlayInfo p{
+    .project_overlay_info p{
         font-size: var(--fontSize100);
     }
 
-    .gotoLink,
-    .gitLink{
+    .goto_link,
+    .git_link{
         font-size: var(--fontSize150);
         min-width: 5rem;
         padding: .25rem 0;
@@ -415,9 +424,9 @@ h2{
 }
 
 @media (min-width: 1000px) {
-    .aboutMeText,
-    .aboutMusicText,
-    .aboutGamesText{
+    .about_me_text,
+    .about_music_text,
+    .about_games_text{
         font-size: var(--fontSize150);        
     }
 }

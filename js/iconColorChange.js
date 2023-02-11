@@ -1,5 +1,5 @@
 const sections = document.querySelectorAll("section");
-const sectionOne = document.querySelector(".headSection");
+const sectionOne = document.querySelector(".head_section");
 
 const navbarImageIntro = document.getElementById("imageIntro");
 const navbarImageProjects = document.getElementById("imageProjects");
@@ -21,35 +21,35 @@ const observer = new IntersectionObserver(function(entries, observer) {
         if(!entry.isIntersecting) return;
 
         if(entry.target === document.getElementById("intro")){
-            navbarImageIntro.classList.add("navLocation");
-            headBackgroundLogo.classList.add("highlightedSectionLogo");
+            navbarImageIntro.classList.add("nav_location");
+            headBackgroundLogo.classList.add("highlighted_section_logo");
         }else{
-            navbarImageIntro.classList.remove("navLocation");
-            headBackgroundLogo.classList.remove("highlightedSectionLogo");
+            navbarImageIntro.classList.remove("nav_location");
+            headBackgroundLogo.classList.remove("highlighted_section_logo");
         }
 
         if(entry.target === document.getElementById("projects")){
-            navbarImageProjects.classList.add("navLocation");
-            projectBackgroundLogo.classList.add("highlightedSectionLogo");
+            navbarImageProjects.classList.add("nav_location");
+            projectBackgroundLogo.classList.add("highlighted_section_logo");
         }else{
-            navbarImageProjects.classList.remove("navLocation");
-            projectBackgroundLogo.classList.remove("highlightedSectionLogo");
+            navbarImageProjects.classList.remove("nav_location");
+            projectBackgroundLogo.classList.remove("highlighted_section_logo");
         }
 
         if(entry.target === document.getElementById("about")){
-            navbarImageAbout.classList.add("navLocation");
-            aboutBackgroundLogo.classList.add("highlightedSectionLogo");
+            navbarImageAbout.classList.add("nav_location");
+            aboutBackgroundLogo.classList.add("highlighted_section_logo");
         }else{
-            navbarImageAbout.classList.remove("navLocation");
-            aboutBackgroundLogo.classList.remove("highlightedSectionLogo");
+            navbarImageAbout.classList.remove("nav_location");
+            aboutBackgroundLogo.classList.remove("highlighted_section_logo");
         }        
 
         if(entry.target === document.getElementById("skills")){
-            navbarImageSkills.classList.add("navLocation");
-            skillsBackgroundLogo.classList.add("highlightedSectionLogo");
+            navbarImageSkills.classList.add("nav_location");
+            skillsBackgroundLogo.classList.add("highlighted_section_logo");
         }else{
-            navbarImageSkills.classList.remove("navLocation");
-            skillsBackgroundLogo.classList.remove("highlightedSectionLogo");
+            navbarImageSkills.classList.remove("nav_location");
+            skillsBackgroundLogo.classList.remove("highlighted_section_logo");
         }
     });
 }, options);

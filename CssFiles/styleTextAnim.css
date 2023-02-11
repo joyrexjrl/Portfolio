@@ -1,13 +1,13 @@
-.nameAnimationLarge,
-.nameAnimationSmall{
+.name_animation_large,
+.name_animation_small{
     padding: 15rem 0;
 }
 
-.nameAnimationLarge{
+.name_animation_large{
     display: none;
 }
 
-.nameAnimationSmall{
+.name_animation_small{
     display: block;
 }
 
@@ -91,11 +91,11 @@
 }
 
 @media (min-width: 800px){
-    .nameAnimationSmall{        
+    .name_animation_small{        
         display: none;
     }
 
-    .nameAnimationLarge{        
+    .name_animation_large{        
         display: block;
         padding: 20rem 0;
     }    

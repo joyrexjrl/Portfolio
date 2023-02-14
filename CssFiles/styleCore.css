@@ -387,14 +387,16 @@ h2{
 }
 
 .skill_card_container{
+    display: grid;
     gap: 2rem;
     margin-top: 2rem;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
 
 .skill_section_card{
     border: 1px solid #FFF;
     width: 100%;
-    min-height: 1050px;
+    min-height: 450px;
 }
 
 .skill_section_finish{

@@ -21,27 +21,49 @@
     <body>
         <header>
            <nav>
-                <div class="sidebar_images">
-                    <div id="imageIntro" class="sidebar_image_intro"></div>
-                    <div id="imageProjects" class="sidebar_image_about_me"></div>
-                    <div id="imageAbout" class="sidebar_image_projects"></div>
-                    <div id="imageSkills" class="sidebar_image_skills"></div>
+                <div class="mobile_nav_display">
+                    <div class="mobile_nav_images">
+                        <div class="mobile_nav_content_container">
+                            <div id="mobileImageIntro" class="mobile_image_intro"></div>
+                            <a class="mobile_goto_a_tags" href="#intro">Intro</a>
+                        </div>
+                        <div class="mobile_nav_content_container">
+                            <div id="mobileImageProjects" class="mobile_image_about_me"></div>
+                            <a class="mobile_goto_a_tags" href="#projects">Projects</a>
+                        </div>                        
+                        <div class="mobile_nav_content_container">
+                            <div id="mobileImageAbout" class="mobile_image_projects"></div>
+                            <a class="mobile_goto_a_tags" href="#about">About</a>
+                        </div>
+                        <div class="mobile_nav_content_container">
+                            <div id="mobileImageSkills" class="mobile_image_skills"></div>
+                            <a class="mobile_goto_a_tags" href="#skills">Skills</a>
+                        </div>                        
+                    </div>
+                </div>
+                <div class="desktop_nav_display">
+                    <div class="sidebar_images">
+                        <div id="imageIntro" class="sidebar_image_intro"></div>
+                        <div id="imageProjects" class="sidebar_image_about_me"></div>
+                        <div id="imageAbout" class="sidebar_image_projects"></div>
+                        <div id="imageSkills" class="sidebar_image_skills"></div>
 
-                    <ul class="sidebar sidebar_row">
-                        <li class="row intro_box">                    
-                            <a href="#intro">Intro</a>
-                        </li>
-                        <li class="row projects_box">                    
-                            <a href="#projects">Projects</a>
-                        </li>
-                        <li class="row about_box">                    
-                            <a href="#about">About</a>
-                        </li>                        
-                        <li class="row skills_box">                    
-                            <a href="#skills">Skills</a>
-                        </li>
-                    </ul>
-                </div>            
+                        <ul class="sidebar sidebar_row">
+                            <li class="row intro_box">                    
+                                <a href="#intro">Intro</a>
+                            </li>
+                            <li class="row projects_box">                    
+                                <a href="#projects">Projects</a>
+                            </li>
+                            <li class="row about_box">                    
+                                <a href="#about">About</a>
+                            </li>                        
+                            <li class="row skills_box">                    
+                                <a href="#skills">Skills</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>                            
             </nav> 
         </header>
         
@@ -130,42 +152,7 @@
                         </div>
                     </div> 
                     <!-- project card end -->
-
-                    <!-- project card start -->
-                    <div class="project_card float_above">
-                        <img src="images/creativeHookersLogo.webp" alt="sitelogo">
-                        <div class="project_overlay">
-                            <div class="project_overlay_heading">
-                                <h3>Creative Hookers</h3>                               
-                            </div>                            
-                            <div class="project_overlay_info">
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt iure laudantium possimus ad quas quam, earum saepe rerum voluptas fugiat.</p>
-                            </div>
-                            <div class="project_overlay_links">
-                                <a class="goto_link" href="https://creativehookers.com/" target="_blank">Goto</a>
-                                <a class="git_link" href="#" target="_blank">Git</a>
-                            </div>
-                        </div>
-                    </div> 
-                    <!-- project card end -->
-
-                    <!-- project card start -->
-                    <div class="project_card float_above">
-                        <img src="images/creativeHookersLogo.webp" alt="sitelogo">
-                        <div class="project_overlay">
-                            <div class="project_overlay_heading">
-                                <h3>Creative Hookers</h3>                               
-                            </div>                            
-                            <div class="project_overlay_info">
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt iure laudantium possimus ad quas quam, earum saepe rerum voluptas fugiat.</p>
-                            </div>
-                            <div class="project_overlay_links">
-                                <a class="goto_link" href="https://creativehookers.com/" target="_blank">Goto</a>
-                                <a class="git_link" href="#" target="_blank">Git</a>
-                            </div>
-                        </div>
-                    </div> 
-                    <!-- project card end -->
+                    
                 </div>                                
             </div>
             <div id="projectSectionBackgroundLogo" class="projects_section_logo"></div>
@@ -212,17 +199,17 @@
                 <h2>Skills</h2>
                 <div class="skill_card_container">
                     <div class="skill_section_card float_above">
-
+                        
                     </div>
                     <div class="skill_section_card float_above">
-
+                        
                     </div>
                     <div class="skill_section_card float_above">
-
+                        
                     </div>
                 </div>
                 <div class="skill_section_finish float_above">
-
+                    <p class="about_me_text"></p>
                 </div>
                 <img class="line_divider_image float_above" src="images/branchLineDividerSVG.svg" alt="line divider">                
             </div>

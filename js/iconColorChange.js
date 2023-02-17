@@ -6,6 +6,11 @@ const navbarImageProjects = document.getElementById("imageProjects");
 const navbarImageAbout = document.getElementById("imageAbout");
 const navbarImageSkills = document.getElementById("imageSkills");
 
+const mobileImageIntro = document.getElementById("mobileImageIntro");
+const mobileImageProjects = document.getElementById("mobileImageProjects");
+const mobileImageAbout = document.getElementById("mobileImageAbout");
+const mobileImageSkills = document.getElementById("mobileImageSkills");
+
 const headBackgroundLogo = document.getElementById("headSectionBackgroundLogo");
 const projectBackgroundLogo = document.getElementById("projectSectionBackgroundLogo");
 const aboutBackgroundLogo = document.getElementById("aboutSectionBackgroundLogo");
@@ -13,7 +18,7 @@ const skillsBackgroundLogo = document.getElementById("skillSectionBackgroundLogo
 
 const options= {
     rootMargin: "-25% 0% -25% 0%",
-    threshold: 0.4
+    threshold: 0.3
 };
 
 const observer = new IntersectionObserver(function(entries, observer) {
@@ -22,33 +27,41 @@ const observer = new IntersectionObserver(function(entries, observer) {
 
         if(entry.target === document.getElementById("intro")){
             navbarImageIntro.classList.add("nav_location");
+            mobileImageIntro.classList.add("nav_location");
             headBackgroundLogo.classList.add("highlighted_section_logo");
         }else{
             navbarImageIntro.classList.remove("nav_location");
+            mobileImageIntro.classList.remove("nav_location");
             headBackgroundLogo.classList.remove("highlighted_section_logo");
         }
 
         if(entry.target === document.getElementById("projects")){
             navbarImageProjects.classList.add("nav_location");
+            mobileImageProjects.classList.add("nav_location");
             projectBackgroundLogo.classList.add("highlighted_section_logo");
         }else{
             navbarImageProjects.classList.remove("nav_location");
+            mobileImageProjects.classList.remove("nav_location");
             projectBackgroundLogo.classList.remove("highlighted_section_logo");
         }
 
         if(entry.target === document.getElementById("about")){
             navbarImageAbout.classList.add("nav_location");
+            mobileImageAbout.classList.add("nav_location");
             aboutBackgroundLogo.classList.add("highlighted_section_logo");
         }else{
             navbarImageAbout.classList.remove("nav_location");
+            mobileImageAbout.classList.remove("nav_location");
             aboutBackgroundLogo.classList.remove("highlighted_section_logo");
         }        
 
         if(entry.target === document.getElementById("skills")){
             navbarImageSkills.classList.add("nav_location");
+            mobileImageSkills.classList.add("nav_location");
             skillsBackgroundLogo.classList.add("highlighted_section_logo");
         }else{
             navbarImageSkills.classList.remove("nav_location");
+            mobileImageSkills.classList.remove("nav_location");
             skillsBackgroundLogo.classList.remove("highlighted_section_logo");
         }
     });

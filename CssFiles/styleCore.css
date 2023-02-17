@@ -12,6 +12,7 @@
     --fontSize600: 2.5rem;
     --fontSize500: 2.25rem;
     --fontSize400: 2rem;
+    --fontSize300: 1.75rem;
     --fontSize200: 1.5rem;
     --fontSize150: 1.25rem;
     --fontSize100: 1rem;
@@ -49,6 +50,10 @@ h1, h2, h3{
 
 h2{
     font-size: var(--fontSize800);
+}
+
+h3{
+    font-size: var(--fontSize300);
 }
 
 .container{
@@ -105,12 +110,11 @@ h2{
 }
 
 .about_section_logo{
-    clip-path: polygon(100% 0, 100% 100%, 50% 70%, 0 100%, 0 0, 50% 30%);
-    
+    clip-path: polygon(100% 0, 100% 100%, 50% 70%, 0 100%, 0 0, 50% 30%);    
 }
 
 .projects_section_logo{
-    clip-path: polygon(51% 0, 100% 30%, 100% 70%, 50% 100%, 0 70%, 0 30%);
+    clip-path: polygon(50% 0, 100% 30%, 100% 70%, 50% 100%, 0 70%, 0 30%);
 }
 
 .skills_section_logo{
@@ -120,6 +124,86 @@ h2{
 /* end back ground logos */
 
 /* start navbar */
+
+/* mobile navbar start */
+
+.mobile_nav_display{
+    display: block;
+    overflow: hidden;
+    background-color: var(--bgColor);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+}
+
+.mobile_nav_content_container{
+    position: relative;
+}
+
+.mobile_nav_images{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-inline: auto;
+    padding: 1rem;
+}
+
+.mobile_image_intro,
+.mobile_image_about_me,
+.mobile_image_projects,
+.mobile_image_skills{
+    background-color: rgba(0, 0, 0, 0.315);
+    width: 80px;
+    height: 51px;
+    transition: all 200ms ease;
+}
+
+.mobile_image_intro{
+    clip-path: polygon(100% 0%, 70% 50%, 100% 100%, 0 100%, 0 0);
+}
+
+.mobile_image_about_me{
+    clip-path: polygon(30% 0, 75% 0, 100% 50%, 75% 100%, 30% 100%, 0 50%);
+}
+
+.mobile_image_projects{
+    clip-path: polygon(0 0, 100% 0, 70% 50%, 100% 100%, 0 100%, 30% 50%);
+}
+
+.mobile_image_skills{
+    clip-path: polygon(30% 0, 100% 0, 100% 100%, 30% 100%, 0 50%);
+}
+
+.mobile_goto_a_tags{
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color:white;
+    font-family: var(--fontFamPrimary);
+    font-size: 1.2rem;
+    z-index: 1000;
+    opacity: 0;
+    transition: all 200ms ease;
+}
+
+.mobile_nav_images:hover .mobile_goto_a_tags{
+    opacity: 1;
+}
+
+/* mobile navbar end */
+
+/* desktop navbar start */
+
+.desktop_nav_display{
+    display: none;
+}
 
 .sidebar_images{
     background-image: url(../images/sideBarSVG.svg);
@@ -203,6 +287,8 @@ h2{
 .nav_location{
     background-color: var(--primaryColor);
 }
+
+/* desktop navbar end */
 
 /* end navbar */
 
@@ -396,7 +482,10 @@ h2{
 .skill_section_card{
     border: 1px solid #FFF;
     width: 100%;
-    min-height: 450px;
+    min-height: 350px;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
 }
 
 .skill_section_finish{
@@ -421,6 +510,14 @@ h2{
 /* end footer section */
 
 @media (min-width: 650px) {
+    .mobile_nav_display{
+        display: none;
+    }
+
+    .desktop_nav_display{
+        display: block;
+    }
+
     .about_me_text,
     .about_music_text,
     .about_games_text{

@@ -466,6 +466,7 @@ h3{
     display: flex;
     flex-direction: column;
     gap: 2rem;
+    min-height: 1300px;
 }
 
 .skills_section{
@@ -481,7 +482,6 @@ h3{
 }
 
 .skill_section_card{
-    border: 1px solid #FFF;
     width: 100%;
     min-height: 350px;
     display: flex;
@@ -513,9 +513,20 @@ h3{
     opacity: 1;
 }
 
+.skills_web_path_text{
+    font-size: var(--fontSize150);
+    width: 100%;
+    text-align: center;
+}
+
+.skill_desctiption_text{
+    font-size: .8rem;
+    padding-inline: 1.5rem;
+}
+
 .line_divider_image{
     width: 100%;
-    margin-inline: auto;
+    margin: auto;
 }
 
 /* end skills section */

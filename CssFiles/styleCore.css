@@ -479,7 +479,7 @@ h3{
     gap: 2rem;
     margin-top: 2rem;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    padding-left: 5rem;
+    padding: 0;
 }
 
 .skill_section_card{
@@ -541,12 +541,6 @@ h3{
 
 /* end footer section */
 
-@media (max-width: 600px){
-    .skill_card_container{
-        padding: 0;
-    }
-}
-
 @media (min-width: 800px) {
     .mobile_nav_display{
         display: none;
@@ -583,7 +577,11 @@ h3{
         font-size: var(--fontSize150);
         min-width: 5rem;
         padding: .25rem 0;
-    }    
+    } 
+    
+    .skill_card_container{
+        padding-left: 5rem;
+    }
 }
 
 @media (min-width: 1000px) {
